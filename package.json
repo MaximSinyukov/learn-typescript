@@ -1,0 +1,22 @@
+{
+  "name": "learn-typescript",
+  "version": "0.1.0",
+  "description": "This project is made for the purpose of learning typescript in depth. It will cover basic examples of its use with small projects.",
+  "main": "app.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximSinyukov/learn-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximSinyukov/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/MaximSinyukov/learn-typescript#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
