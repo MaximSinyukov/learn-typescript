@@ -1,27 +1,9 @@
-type Combainable = number | string | boolean;
-type ConversialDescriptor = 'as-number' | 'as-text';
-
-function combine(
-    one: Combainable,
-    two: Combainable,
-    resultConversion: ConversialDescriptor,
-) {
-  let result;
-
-  // if (typeof one === 'number' && typeof two === 'number' ||  resultConversion === 'as-numbe') { error as-numbe
-    if (typeof one === 'number' && typeof two === 'number' ||  resultConversion === 'as-number') {
-    result = +one + +two;
-  } else {
-    result = one.toString() + two.toString();
-  }
-
-   return result;
+function add(n1: number, n2: number):number {
+  return n1 + n2;
 }
 
-const combinesAges = combine(30, 24, 'as-number');
+function printResult(num: number): void {
+  console.log('Result: ' + num);
+}
 
-const combinesStringAges = combine('30', '24', 'as-text');
-
-const combineNames = combine('Valery', 'Borov', 'as-text');
-
-console.log(combinesAges, combinesStringAges, combineNames);
+printResult(add(5, 12));
