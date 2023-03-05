@@ -9,3 +9,11 @@ example = 'hi bro';
 if (typeof example == 'string') {
   text = example;
 }
+
+function createErr(msg: string, num: number): never { // crush script in all cases
+  throw { message: msg, errorCode: num };
+
+  // while (true) {}
+}
+
+createErr('tex text etx', 782);
