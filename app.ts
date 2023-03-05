@@ -1,7 +1,10 @@
+type Combainable = number | string | boolean;
+type ConversialDescriptor = 'as-number' | 'as-text';
+
 function combine(
-    one: string | number | boolean,
-    two: string | number | boolean,
-    resultConversion: 'as-number' | 'as-text',
+    one: Combainable,
+    two: Combainable,
+    resultConversion: ConversialDescriptor,
 ) {
   let result;
 
