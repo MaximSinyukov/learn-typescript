@@ -1,16 +1,16 @@
-function add(one: number, two: number, showResult: boolean, phrase: string) {
-  if (showResult) {
-    console.log(phrase + (one + two));
-  } else {
-    return one + two;
-  }
-}
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
+//   name: 'Max',
+//   age: 24,
+// };
 
-let testvar1: number;
-testvar1 = 23;
-const testvar2 = 2.8;
-const printResult = true;
-let resultPhrase = "oh that is: ";
-// resultPhrase = 65; error 
+const person = {
+  name: 'Max',
+  age: 24,
+};
 
-add(testvar1, testvar2, printResult, resultPhrase);
+// console.log(person.notexistprop); // get error
+
+console.log(person.name);
